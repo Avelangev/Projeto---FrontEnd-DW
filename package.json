@@ -1,0 +1,15 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "Este projeto é uma aplicação web para verificar a saúde do PC e gerenciar categorias.",
+  "main": "vite.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.2"
+  }
+}

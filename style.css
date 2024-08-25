@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('src/assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  header, footer {
+    background-color: #1e1e1e;
+    padding: 10px 0;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #be5c28;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #a05024;
+  }
+  
+  .main-content {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .heart img {
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  .progress-bar-container {
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 20px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #be5c28;
+    border-radius: 5px;
+    transition: width 2s;
+  }
+  
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  footer .social-icons a {
+    margin: 0 10px;
+  }
+  
+  footer .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  button#backToLogin {
+    width: 100%;
+    padding: 10px;
+    background-color: #be5c28;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button#backToLogin:hover {
+    background-color: #a05024;
+  }
+  
+  
+  .hide-header header {
+    display: none;
+}
