@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde do PC</title>
+    <link rel="stylesheet" href="/frontend/style.css">
+</head>
+<body>
+    <header>
+        <h1>Monitoramento da Saúde do PC</h1>
+    </header>
+
+    <main>
+        <div id="systemInfo">
+            <p>CPU: <span id="cpuUsage">Carregando...</span></p>
+            <p>RAM: <span id="ramUsage">Carregando...</span></p>
+            <p>Disco: <span id="diskUsage">Carregando...</span></p>
+        </div>
+    </main>
+
+    <script type="module" src="/frontend/src/main.js"></script>
+
+    <!-- Script para buscar os dados do sistema e atualizar a página -->
+    <script>
+        // Função para obter as informações do sistema
+        function fetchSystemStats() {
+            fetch('http://localhost:5000/api/system-stats')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('cpuUsage').textContent = data.cpu;
+                    document.getElementById('ramUsage').textContent = data.memory;
+                    document.getElementById('diskUsage').textContent = data.disk;
+                })
+                .catch(error => {
+                    console.error('Erro ao coletar informações do sistema:', error);
+                });
+        }
+
+        // Chama a função ao carregar a página
+        document.addEventListener('DOMContentLoaded', fetchSystemStats);
+    </script>
+</body>
+</html>
